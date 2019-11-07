@@ -1,9 +1,9 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
 let visitCount = 0;
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   visitCount++;
   const string = `Hello World! You have visited this app ${visitCount} times!`;
   console.log(string);
@@ -11,3 +11,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000);
+
+//wget localhost:3002
